@@ -36,6 +36,9 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="RabanSoft.SysInvoke, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RabanSoft.SysInvoke.1.0.0.1\lib\net40\RabanSoft.SysInvoke.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms" />
@@ -60,10 +63,7 @@
     <Compile Include="Core\WindowHookBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SysInvoke\SysInvoke.csproj">
-      <Project>{15a643b3-e779-4be6-b57d-214dc825041a}</Project>
-      <Name>SysInvoke</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
